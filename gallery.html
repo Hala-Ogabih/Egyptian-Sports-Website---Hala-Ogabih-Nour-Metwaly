@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>AQUORA | Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="aquora-navbar">
+
+        <a href="index.html" class="aquora-logo">
+            <img src="img/logo AQUORA.svg" alt="AQUORA">
+        </a>
+
+        <nav class="aquora-navigation">
+            <a href="index.html" class="aquora-nav-link" id="navHome"></a>
+            <a href="gallery.html" class="aquora-nav-link" id="navGallery"></a>
+            <a href="whyChooseUs.html" class="aquora-nav-link" id="navWhyChooseUs"></a>
+            <a href="contact.html" class="aquora-nav-link" id="navContact"></a>
+        </nav>
+
+        <button class="aquora-theme-button" id="modeToggle" aria-label="Change theme">
+            <img src="img/dark-icon.png" alt="Dark mode" class="aquora-icon-dark">
+            <img src="img/light-icon.png" alt="Light mode" class="aquora-icon-light">
+        </button>
+
+    </header>
+
+    <section class="liquid-hero-section">
+
+        <div class="liquid-overlay"></div>
+
+        <div class="liquid-hero-content">
+
+            <div class="liquid-title-wrapper">
+
+                <h1 class="liquid-main-title" data-text="GALLERY MOMENTS" id="liquidMainTitle">
+                </h1>
+
+                <h1 class="liquid-water-title" aria-hidden="true" id="liquidWaterTitle">
+                </h1>
+
+            </div>
+
+            <p class="liquid-subtitle" id="liquidSubtitle"></p>
+
+            <div class="liquid-trail-container" id="liquidTrailArea">
+
+                <div class="liquid-images-wrapper">
+
+                    <img id="liquid-img-1" src="img/1.jpg" class="liquid-trail-image" alt="Moment 1">
+                    <img id="liquid-img-2" src="img/2.jpg" class="liquid-trail-image" alt="Moment 2">
+                    <img id="liquid-img-3" src="img/3.jpg" class="liquid-trail-image" alt="Moment 3">
+                    <img id="liquid-img-4" src="img/4.jpg" class="liquid-trail-image" alt="Moment 4">
+                    <img id="liquid-img-5" src="img/5.jpg" class="liquid-trail-image" alt="Moment 5">
+                    <img id="liquid-img-6" src="img/6.jpg" class="liquid-trail-image" alt="Moment 6">
+                    <img id="liquid-img-7" src="img/7.jpg" class="liquid-trail-image" alt="Moment 7">
+                    <img id="liquid-img-8" src="img/8.jpg" class="liquid-trail-image" alt="Moment 8">
+                    <img id="liquid-img-9" src="img/9.jpg" class="liquid-trail-image" alt="Moment 9">
+                    <img id="liquid-img-10" src="img/10.jpg" class="liquid-trail-image" alt="Moment 10">
+                    <img id="liquid-img-11" src="img/11.jpg" class="liquid-trail-image" alt="Moment 11">
+                    <img id="liquid-img-12" src="img/12.jpg" class="liquid-trail-image" alt="Moment 12">
+                    <img id="liquid-img-13" src="img/13.jpg" class="liquid-trail-image" alt="Moment 13">
+                    <img id="liquid-img-14" src="img/14.jpg" class="liquid-trail-image" alt="Moment 14">
+                    <img id="liquid-img-15" src="img/15.jpg" class="liquid-trail-image" alt="Moment 15">
+                    <img id="liquid-img-16" src="img/16.jpg" class="liquid-trail-image" alt="Moment 16">
+
+                </div>
+
+                <img src="img/Liquid-arrow.svg" alt="Wave Arrow" class="liquid-arrow-img">
+
+            </div>
+
+            <p class="liquid-bottom-text" id="liquidBottomText"></p>
+
+        </div>
+
+    </section>
+
+    <footer class="purewave-footer" id="contact">
+    <div class="footer-overlay"></div>
+
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img id="footerBrand" src="img/logo AQUORA.svg">
+            <p id="footerTagline"></p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h3 id="footerExploreTitle"></h3>
+
+                    <a href="index.html" id="footerHome"></a>
+                    <a href="whyChooseUs.html" id="footerStory"></a>
+                    <a href="#classes" id="footerClasses"></a>
+                    <a href="contact.html" id="footerContact"></a>
+                </div>
+
+                <div class="footer-links">
+                    <h3 id="footerProgramsTitle"></h3>
+
+                    <a href="#classes" id="footerProgram1"></a>
+                    <a href="#classes" id="footerProgram2"></a>
+                    <a href="#classes" id="footerProgram3"></a>
+                    <a href="#classes" id="footerProgram4"></a>
+                </div>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="X">
+                    <img src="img/X.png" alt="X">
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <img src="img/Youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p id="footerCopyright"></p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script>
+
+           document.getElementById("modeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        document.getElementById("navHome").innerHTML = "Home";
+
+        document.getElementById("navGallery").innerHTML = "Gallery";
+
+        document.getElementById("navWhyChooseUs").innerHTML = "Why Choose Us";
+
+        document.getElementById("navContact").innerHTML = "Contact Us";
+
+        document.getElementById("liquidMainTitle").innerHTML =
+            "LIQUID STORIES";
+
+        document.getElementById("liquidWaterTitle").innerHTML =
+            "LIQUID STORIES";
+
+        document.getElementById("liquidSubtitle").innerHTML =
+            "EVERY MOMENT LEAVES A RIPPLE.";
+
+        document.getElementById("liquidBottomText").innerHTML =
+            "Hover to reveal the moments";
+
+
+        // img trail use AI
+        const trailArea = document.getElementById("liquidTrailArea");
+        const trailImages = document.querySelectorAll(".liquid-trail-image");
+        let currentIndex = 0;
+        let lastX = 0;
+        let lastY = 0;
+        const distanceThreshold = 130;
+        if (trailArea && trailImages.length > 0) {
+            trailArea.addEventListener("mousemove", (e) => {
+                const rect = trailArea.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const distance = Math.hypot(
+                    x - lastX,
+                    y - lastY
+                );
+
+                if (distance > distanceThreshold) {
+
+                    lastX = x;
+                    lastY = y;
+
+                    const img = trailImages[currentIndex];
+
+                    img.style.left = `${x}px`;
+                    img.style.top = `${y}px`;
+
+                    img.style.borderRadius = "8px";
+
+                    const randomRotation = (Math.random() - 0.5) * 20;
+
+                    img.classList.add("liquid-active");
+
+                    img.style.transform =
+                        `translate(-50%, -50%) scale(1) rotate(${randomRotation}deg)`;
+
+                    setTimeout(() => {
+
+                        img.style.transform =
+                            `translate(-50%, -50%) scale(0.8) rotate(${randomRotation}deg)`;
+
+                        img.classList.remove("liquid-active");
+
+                    }, 600);
+
+                    currentIndex = (currentIndex + 1) % trailImages.length;
+                }
+            });
+        }
+
+
+
+        document.getElementById("footerTagline").innerHTML = `
+    Where every splash begins a new story.
+`;
+
+document.getElementById("footerExploreTitle").innerHTML = "EXPLORE";
+
+document.getElementById("footerHome").innerHTML = "HOME";
+document.getElementById("footerStory").innerHTML = "OUR STORY";
+document.getElementById("footerClasses").innerHTML = "OUR CLASSES";
+document.getElementById("footerContact").innerHTML = "CONTACT US";
+
+document.getElementById("footerProgramsTitle").innerHTML = "OUR PROGRAMS";
+
+document.getElementById("footerProgram1").innerHTML = "LITTLE SPLASHERS";
+document.getElementById("footerProgram2").innerHTML = "SWIM STARTERS";
+document.getElementById("footerProgram3").innerHTML = "STROKE MASTERS";
+document.getElementById("footerProgram4").innerHTML = "CHAMPIONS";
+
+document.getElementById("footerCopyright").innerHTML = `
+    © 2026 PUREWAVE. ALL RIGHTS RESERVED.
+`;
+
+    </script>
+
+</body>
+
+</html>

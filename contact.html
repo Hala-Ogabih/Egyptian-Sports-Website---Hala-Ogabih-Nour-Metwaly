@@ -1,0 +1,241 @@
+<!-- nour -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>AQUORA | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="aquora-navbar">
+        <a href="index.html" class="aquora-logo">
+            <img src="img/logo AQUORA.svg" alt="AQUORA">
+        </a>
+
+        <nav class="aquora-navigation">
+            <a href="index.html" class="aquora-nav-link" id="navHome"></a>
+            <a href="gallery.html" class="aquora-nav-link" id="navGallery"></a>
+            <a href="whyChooseUs.html" class="aquora-nav-link" id="navWhyChooseUs"></a>
+            <a href="contact.html" class="aquora-nav-link" id="navContact"></a>
+        </nav>
+
+        <button class="aquora-theme-button" id="modeToggle" aria-label="Change theme">
+            <img src="img/dark-icon.png" alt="Dark mode" class="aquora-icon-dark">
+            <img src="img/light-icon.png" alt="Light mode" class="aquora-icon-light">
+        </button>
+    </header>
+
+    <main>
+        <section class="contact-hero" id="contactHero">
+            <div class="contact-hero-background"></div>
+            <div class="contact-hero-overlay"></div>
+
+            <div class="contact-hero-content">
+                <div class="contact-title-container">
+                    <h1 class="contact-hero-title" id="contactHeroTitle"></h1>
+                </div>
+
+                <p class="contact-hero-description" id="contactHeroDescription"></p>
+
+                <div class="contact-swimmer-wrapper">
+                    <img src="img/contact-swim-hero.png" alt="Swimmer underwater" class="contact-swimmer-img">
+                </div>
+
+                <a href="#contactForm" class="contact-hero-button" id="contactHeroButton"></a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contactForm">
+            <div class="contact-container">
+
+                <div class="contact-heading-row">
+                    <h2 class="contact-section-title" id="contactSectionTitle"></h2>
+                    <p class="contact-section-description" id="contactSectionDescription"></p>
+                </div>
+
+                <div class="contact-details-row">
+                    <form class="contact-form" id="contactMessageForm">
+                        <div class="contact-form-inputs">
+                            <input type="text" name="fullName" id="contactName" placeholder="Full Name" autocomplete="name" required>
+                            <input type="email" name="email" id="contactEmail" placeholder="E-mail" autocomplete="email" required>
+                        </div>
+
+                        <textarea id="contactMessage" name="message" placeholder="Your Message..." rows="6" required></textarea>
+
+                        <button type="submit" class="contact-submit-button" id="contactSubmitButton"></button>
+                        <p class="contact-form-status" id="contactFormStatus" aria-live="polite"></p>
+                    </form>
+
+                    <div class="contact-methods">
+                        <a href="mailto:hello@example.com" class="contact-method" id="contactEmailLink">
+                            <span class="contact-method-icon">
+                                <img src="img/email.svg">
+                            </span>
+                            <span id="contactEmailText"></span>
+                        </a>
+
+                        <a href="tel:+200000000000" class="contact-method" id="contactPhoneLink">
+                            <span class="contact-method-icon">
+                               <img src="img/call.svg">
+                            </span>
+                            <span id="contactPhoneText"></span>
+                        </a>
+
+                        <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="contact-method" id="contactLocationLink">
+                            <span class="contact-method-icon">
+                               <img src="img/locate.svg">
+                            </span>
+                            <span id="contactLocationText"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="purewave-footer" id="contact">
+    <div class="footer-overlay"></div>
+
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img id="footerBrand" src="img/logo AQUORA.svg">
+            <p id="footerTagline"></p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h3 id="footerExploreTitle"></h3>
+
+                    <a href="index.html" id="footerHome"></a>
+                    <a href="whyChooseUs.html" id="footerStory"></a>
+                    <a href="#classes" id="footerClasses"></a>
+                    <a href="contact.html" id="footerContact"></a>
+                </div>
+
+                <div class="footer-links">
+                    <h3 id="footerProgramsTitle"></h3>
+
+                    <a href="#classes" id="footerProgram1"></a>
+                    <a href="#classes" id="footerProgram2"></a>
+                    <a href="#classes" id="footerProgram3"></a>
+                    <a href="#classes" id="footerProgram4"></a>
+                </div>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="X">
+                    <img src="img/X.png" alt="X">
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <img src="img/Youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p id="footerCopyright"></p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        document.getElementById("modeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        document.getElementById("navHome").innerHTML = "Home";
+        document.getElementById("navGallery").innerHTML = "Gallery";
+        document.getElementById("navWhyChooseUs").innerHTML = "Why Choose Us";
+        document.getElementById("navContact").innerHTML = "Contact Us";
+
+        document.getElementById("contactHeroTitle").innerHTML = "LET'S MAKE<br>WAVES TOGETHER";
+
+        document.getElementById("contactHeroDescription").innerHTML = `
+            Questions, ideas, or ready to take the plunge? We're just a
+            message away. Reach out and let's start something great.
+        `;
+
+        document.getElementById("contactHeroButton").innerHTML = `
+            GET IN TOUCH <span>→</span>
+        `;
+
+        document.getElementById("contactSectionTitle").innerHTML = `
+            WE'D LOVE<br><span>TO HEAR FROM YOU!</span>
+        `;
+
+        document.getElementById("contactSectionDescription").innerHTML = `
+            Whether you're curious about our programs, need a little guidance,
+            or simply want to say hello, we'd love to hear what's on your mind.
+        `;
+
+        document.getElementById("contactSubmitButton").innerHTML = "SEND MESSAGE";
+
+        document.getElementById("contactEmailText").innerHTML = "E-MAIL US";
+        document.getElementById("contactPhoneText").innerHTML = "CALL US";
+        document.getElementById("contactLocationText").innerHTML = "FIND US";
+
+        document.getElementById("contactMessageForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            let name = document.getElementById("contactName").value.trim();
+            let email = document.getElementById("contactEmail").value.trim();
+            let message = document.getElementById("contactMessage").value.trim();
+
+            let subject = encodeURIComponent("AQUORA Website Enquiry");
+            let body = encodeURIComponent(
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n\n" +
+                message
+            );
+
+            document.getElementById("contactFormStatus").textContent =
+                "Your email app will open to send your message.";
+
+            window.location.href =
+                "mailto:hello@example.com?subject=" + subject + "&body=" + body;
+        });
+
+        // document.getElementById("footerBrand").innerHTML = "PUREWAVE";
+
+document.getElementById("footerTagline").innerHTML = `
+    Where every splash begins a new story.
+`;
+
+document.getElementById("footerExploreTitle").innerHTML = "EXPLORE";
+
+document.getElementById("footerHome").innerHTML = "HOME";
+document.getElementById("footerStory").innerHTML = "OUR STORY";
+document.getElementById("footerClasses").innerHTML = "OUR CLASSES";
+document.getElementById("footerContact").innerHTML = "CONTACT US";
+
+document.getElementById("footerProgramsTitle").innerHTML = "OUR PROGRAMS";
+
+document.getElementById("footerProgram1").innerHTML = "LITTLE SPLASHERS";
+document.getElementById("footerProgram2").innerHTML = "SWIM STARTERS";
+document.getElementById("footerProgram3").innerHTML = "STROKE MASTERS";
+document.getElementById("footerProgram4").innerHTML = "CHAMPIONS";
+
+document.getElementById("footerCopyright").innerHTML = `
+    © 2026 PUREWAVE. ALL RIGHTS RESERVED.
+`;
+    </script>
+
+</body>
+</html>

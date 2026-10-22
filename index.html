@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>AQUORA | Pure Wave</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="aquora-navbar">
+        <a href="index.html" class="aquora-logo">
+            <img src="img/logo AQUORA.svg" alt="AQUORA">
+        </a>
+
+        <nav class="aquora-navigation">
+            <a href="index.html" class="aquora-nav-link" id="navHome"></a>
+            <a href="gallery.html" class="aquora-nav-link" id="navGallery"></a>
+            <a href="whyChooseUs.html" class="aquora-nav-link" id="navWhyChooseUs"></a>
+            <a href="contact.html" class="aquora-nav-link" id="navContact"></a>
+        </nav>
+
+        <button class="aquora-theme-button" id="modeToggle" aria-label="Change theme">
+            <img src="img/dark-icon.png" alt="Dark mode" class="aquora-icon-dark">
+            <img src="img/light-icon.png" alt="Light mode" class="aquora-icon-light">
+        </button>
+
+    </header>
+
+    <main class="aquora-hero">
+        <div class="aquora-hero-background"></div>
+        <div class="aquora-hero-overlay"></div>
+        <section class="aquora-hero-content" id="home">
+
+            <div class="aquora-title-container">
+
+                <h1 class="aquora-hero-title" id="heroTitle"></h1>
+
+                <div class="aquora-title-water" aria-hidden="true" id="heroTitleWater"></div>
+            </div>
+
+            <img src="img/men hero1.png" alt="Swimmer in a swimming pool" class="aquora-swimmer">
+
+            <div class="aquora-hero-description">
+
+                <h2 class="aquora-description-title" id="heroDescriptionTitle"></h2>
+
+                <p class="aquora-description-text" id="heroDescriptionText"></p>
+
+            </div>
+
+            <div class="aquora-stats">
+
+                <article class="aquora-stat-card">
+                    <strong class="aquora-stat-number" id="statNumber1"></strong>
+                    <span class="aquora-stat-text" id="statText1"></span>
+                </article>
+
+                <article class="aquora-stat-card">
+                    <strong class="aquora-stat-number" id="statNumber2"></strong>
+                    <span class="aquora-stat-text" id="statText2"></span>
+                </article>
+
+                <article class="aquora-stat-card">
+                    <strong class="aquora-stat-number" id="statNumber3"></strong>
+                    <span class="aquora-stat-text" id="statText3"></span>
+                </article>
+
+            </div>
+
+            <div class="aquora-social-bar">
+
+                <a href="#" class="aquora-social-link" aria-label="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" class="aquora-social-link" aria-label="Instagram">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" class="aquora-social-link" aria-label="X">
+                    <img src="img/X.png" alt="X">
+                </a>
+
+                <a href="#" class="aquora-social-link" aria-label="YouTube">
+                    <img src="img/Youtube.png" alt="YouTube">
+                </a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <section class="FindFlow-section" id="classes">
+
+        <div class="FindFlow-container">
+
+            <header class="FindFlow-header">
+
+                <div class="FindFlow-subtitle" id="findFlowSubtitle"></div>
+
+                <h2 class="FindFlow-title" id="findFlowTitle"></h2>
+
+            </header>
+
+            <div class="FindFlow-cards">
+
+                <article class="FindFlow-card">
+
+                    <div class="FindFlow-image-wrapper">
+                        <img src="img/img card1.png" alt="Little splashers" class="FindFlow-image">
+                    </div>
+
+                    <div class="FindFlow-card-content">
+
+                        <h3 class="FindFlow-card-title" id="cardTitle1"></h3>
+
+                        <p class="FindFlow-description" id="cardDescription1"></p>
+
+                        <a href="#" class="FindFlow-link" id="cardLink1"></a>
+
+                    </div>
+
+                </article>
+
+                <article class="FindFlow-card">
+
+                    <div class="FindFlow-image-wrapper">
+                        <img src="img/img card2.png" alt="Swim starters" class="FindFlow-image">
+                    </div>
+
+                    <div class="FindFlow-card-content">
+
+                        <h3 class="FindFlow-card-title" id="cardTitle2"></h3>
+
+                        <p class="FindFlow-description" id="cardDescription2"></p>
+
+                        <a href="#" class="FindFlow-link" id="cardLink2"></a>
+
+                    </div>
+
+                </article>
+
+                <article class="FindFlow-card">
+
+                    <div class="FindFlow-image-wrapper">
+                        <img src="img/img card3.png" alt="Stroke masters" class="FindFlow-image">
+                    </div>
+
+                    <div class="FindFlow-card-content">
+
+                        <h3 class="FindFlow-card-title" id="cardTitle3"></h3>
+
+                        <p class="FindFlow-description" id="cardDescription3"></p>
+
+                        <a href="#" class="FindFlow-link" id="cardLink3"></a>
+
+                    </div>
+
+                </article>
+
+                <article class="FindFlow-card">
+
+                    <div class="FindFlow-image-wrapper">
+                        <img src="img/img card4.png" alt="Swimming champions" class="FindFlow-image">
+                    </div>
+
+                    <div class="FindFlow-card-content">
+
+                        <h3 class="FindFlow-card-title" id="cardTitle4"></h3>
+
+                        <p class="FindFlow-description" id="cardDescription4"></p>
+
+                        <a href="#" class="FindFlow-link" id="cardLink4"></a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="SWIMMING-about-section">
+
+        <div class="SWIMMING-about-card">
+
+            <div class="SWIMMING-about-content">
+
+                <span class="SWIMMING-about-label" id="aboutLabel"></span>
+
+                <h2 class="SWIMMING-about-title" id="aboutTitle"></h2>
+
+                <p class="SWIMMING-about-description" id="aboutDescription"></p>
+
+            </div>
+
+            <div class="SWIMMING-about-image-wrapper">
+
+                <div class="SWIMMING-about-image-border"></div>
+
+                <div class="SWIMMING-about-image">
+                    <img src="img/swimming-img.png" alt="Swimmer moving through the water">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- nour -->
+
+
+    <section class="confidence-section" id="why-choose-us">
+        <div class="confidence-container">
+            <div class="confidence-heading">
+                <span class="confidence-label" id="confidenceLabel"></span>
+                <h2 id="confidenceTitle"></h2>
+                <p id="confidenceDescription"></p>
+            </div>
+
+            <div class="confidence-content">
+                <div class="confidence-image">
+                    <img src="img/why pw.png" alt="Swimming instructor helping a child">
+                </div>
+
+                <div class="confidence-right">
+                    <div class="confidence-feature">
+                        <span class="confidence-icon">
+                            <img src="img/icon-1.svg" alt="">
+                        </span>
+                        <h3 id="confidenceFeature1"></h3>
+                    </div>
+
+                    <div class="confidence-feature">
+                        <span class="confidence-icon">
+                            <img src="img/icon-2.svg" alt="">
+                        </span>
+                        <h3 id="confidenceFeature2"></h3>
+                    </div>
+
+                    <div class="confidence-feature">
+                        <span class="confidence-icon">
+                            <img src="img/icon-3.svg" alt="">
+                        </span>
+                        <h3 id="confidenceFeature3"></h3>
+                    </div>
+
+                    <a href="whyChooseUs.html" class="confidence-link" id="confidenceLink"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="milestones-section" id="milestones">
+        <div class="milestones-container">
+            <div class="milestones-heading">
+                <span class="milestones-label" id="milestonesLabel"></span>
+                <h2 id="milestonesTitle"></h2>
+            </div>
+
+            <div class="milestones-grid">
+                <article class="milestone-card">
+                    <div class="milestone-image">
+                        <img src="img/fs.png" alt="Child learning to swim" loading="lazy">
+                    </div>
+                    <h3 id="milestoneTitle1"></h3>
+                </article>
+
+                <article class="milestone-card">
+                    <div class="milestone-image">
+                        <img src="img/gc.png" alt="Happy child swimming" loading="lazy">
+                    </div>
+                    <h3 id="milestoneTitle2"></h3>
+                </article>
+
+                <article class="milestone-card">
+                    <div class="milestone-image">
+                        <img src="img/bm.png" alt="Children celebrating swimming achievements" loading="lazy">
+                    </div>
+                    <h3 id="milestoneTitle3"></h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="waves-section" id="waves">
+        <div class="waves-container">
+            <div class="waves-heading">
+                <span class="waves-label" id="wavesLabel"></span>
+                <h2 id="wavesTitle"></h2>
+            </div>
+
+            <div class="waves-action">
+                <p id="wavesDescription"></p>
+                <a href="#classes" class="waves-button" id="wavesButton"></a>
+            </div>
+        </div>
+    </section>
+
+        <footer class="purewave-footer" id="contact">
+
+        <div class="footer-overlay"></div>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <img id="footerBrand" src="img/logo AQUORA.svg" alt="AQUORA">
+                <p id="footerTagline"></p>
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-links-group">
+
+                    <div class="footer-links">
+                        <h3 id="footerExploreTitle"></h3>
+
+                        <a href="index.html" id="footerHome"></a>
+                        <a href="whyChooseUs.html" id="footerStory"></a>
+                        <a href="#classes" id="footerClasses"></a>
+                        <a href="contact.html" id="footerContact"></a>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 id="footerProgramsTitle"></h3>
+
+                        <a href="#classes" id="footerProgram1"></a>
+                        <a href="#classes" id="footerProgram2"></a>
+                        <a href="#classes" id="footerProgram3"></a>
+                        <a href="#classes" id="footerProgram4"></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <img src="img/X.png" alt="X">
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <img src="img/Youtube.png" alt="YouTube">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                <p id="footerCopyright"></p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+
+        document.getElementById("modeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        document.getElementById("navHome").innerHTML = "Home";
+        document.getElementById("navGallery").innerHTML = "Gallery";
+        document.getElementById("navWhyChooseUs").innerHTML = "Why Choose Us";
+        document.getElementById("navContact").innerHTML = "Contact Us";
+
+        document.getElementById("heroTitle").innerHTML = "PURE WAVE";
+        document.getElementById("heroTitleWater").innerHTML = "PURE WAVE";
+
+        document.getElementById("heroDescriptionTitle").innerHTML = "DESIGNED FOR YOUR ESCAPE.";
+
+        document.getElementById("heroDescriptionText").innerHTML = `
+        Discover a new level of outdoor living with
+        beautifully crafted swimming pools designed
+        around your lifestyle. From modern elegance
+        to timeless luxury, we turn your backyard into
+        a personal retreat.`;
+
+        document.getElementById("statNumber1").innerHTML = "100%";
+        document.getElementById("statText1").innerHTML = `Built<br>Around You`;
+
+        document.getElementById("statNumber2").innerHTML = "20+";
+        document.getElementById("statText2").innerHTML = `Years<br>of Expertise`;
+
+        document.getElementById("statNumber3").innerHTML = "850+";
+        document.getElementById("statText3").innerHTML = `Pools Created`;
+
+        document.getElementById("findFlowSubtitle").innerHTML = "Made For Every Swimmer";
+        document.getElementById("findFlowTitle").innerHTML = "FIND YOUR FLOW IN THE WATER";
+
+
+        let findFlowCards = [
+            {
+                title: "01. LITTLE SPLASHERS",
+                description: "Making Their First Water Memories! Fun, Gentle Sessions Where Little Ones Explore The Water Safely With You By Their Side."
+            },
+            {
+                title: "02. SWIM STARTERS",
+                description: "Ready, Set, Splash! Kids Build Confidence, Learn The Basics, And Discover Just How Much Fun Swimming Can Be."
+            },
+            {
+                title: "03. STROKE MASTERS",
+                description: "Already Love Swimming? Sharpen Your Technique, Build Stamina, And Take Your Skills To The Next Level."
+            },
+            {
+                title: "04. CHAMPIONS",
+                description: "Got Your Eyes On The Finish Line? Train With Purpose, Improve Your Speed, And Get Ready To Make Waves In Competition."
+            }
+        ];
+
+        document.getElementById("cardTitle1").innerHTML = findFlowCards[0].title;
+        document.getElementById("cardDescription1").innerHTML = findFlowCards[0].description;
+        document.getElementById("cardLink1").innerHTML = `EXPLORE CLASS <span class="FindFlow-arrow">↗</span>`;
+
+        document.getElementById("cardTitle2").innerHTML = findFlowCards[1].title;
+        document.getElementById("cardDescription2").innerHTML = findFlowCards[1].description;
+        document.getElementById("cardLink2").innerHTML = `EXPLORE CLASS <span class="FindFlow-arrow">↗</span>`;
+
+        document.getElementById("cardTitle3").innerHTML = findFlowCards[2].title;
+        document.getElementById("cardDescription3").innerHTML = findFlowCards[2].description;
+        document.getElementById("cardLink3").innerHTML = `EXPLORE CLASS <span class="FindFlow-arrow">↗</span>`;
+
+        document.getElementById("cardTitle4").innerHTML = findFlowCards[3].title;
+        document.getElementById("cardDescription4").innerHTML = findFlowCards[3].description;
+        document.getElementById("cardLink4").innerHTML = `EXPLORE CLASS <span class="FindFlow-arrow">↗</span>`;
+
+
+        document.getElementById("aboutLabel").innerHTML = "ABOUT US";
+
+        document.getElementById("aboutTitle").innerHTML = `
+        WHERE YOUR
+        <span>SWIMMING</span>
+        JOURNEY BEGINS`;
+
+        document.getElementById("aboutDescription").innerHTML = `
+        We believe swimming is more than a sport. It’s a
+        feeling, a journey, and a connection between
+        you and the water.
+
+        From your very first stroke to your greatest
+        achievements, we’re here to inspire confidence,
+        celebrate progress, and help you discover the
+        beauty of swimming.
+
+        Every stroke tells a story. Let yours begin here.`;
+
+
+
+
+        // start animation use AI
+        const swimmingSection = document.querySelector(".SWIMMING-about-section");
+
+        if (swimmingSection) {
+            const swimmingObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("SWIMMING-visible");
+                            swimmingObserver.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.2
+                }
+            );
+
+            swimmingObserver.observe(swimmingSection);
+        }
+
+
+
+        // nour
+
+        let wavesSection = document.querySelector(".waves-section");
+
+        if (wavesSection && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            let wavesTicking = false;
+
+            function updateWavesParallax() {
+                let rect = wavesSection.getBoundingClientRect();
+                let windowHeight = window.innerHeight;
+
+                if (rect.bottom > 0 && rect.top < windowHeight) {
+                    let progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+                    let movement = (progress - 0.5) * 110;
+
+                    wavesSection.style.setProperty("--waves-parallax", movement + "px");
+                }
+
+                wavesTicking = false;
+            }
+
+            function handleWavesScroll() {
+                if (!wavesTicking) {
+                    requestAnimationFrame(updateWavesParallax);
+                    wavesTicking = true;
+                }
+            }
+
+            window.addEventListener("scroll", handleWavesScroll, { passive: true });
+            window.addEventListener("resize", handleWavesScroll);
+
+            updateWavesParallax();
+        }
+
+
+
+        document.getElementById("confidenceLabel").innerHTML = "WHY PUREWAVE?";
+
+        document.getElementById("confidenceTitle").innerHTML = `
+    MORE THAN <span>SWIMMING.</span><br>
+    A LIFETIME OF CONFIDENCE.
+`;
+
+        document.getElementById("confidenceDescription").innerHTML = `
+    Every stroke builds courage. Every lesson unlocks potential.
+    At Purewave, we make every swimming journey personal,
+    safe, and unforgettable.
+`;
+
+        document.getElementById("confidenceFeature1").innerHTML = "SAFE IN EVERY SPLASH";
+        document.getElementById("confidenceFeature2").innerHTML = "PROGRESS AT YOUR PACE";
+        document.getElementById("confidenceFeature3").innerHTML = "PASSION IN EVERY LESSON";
+
+        document.getElementById("confidenceLink").innerHTML = `
+    DISCOVER OUR APPROACH <span>↗</span>
+`;
+
+
+        document.getElementById("milestonesLabel").innerHTML = "FROM OUR SWIMMING FAMILY";
+
+        document.getElementById("milestonesTitle").innerHTML = `
+    SMALL SPLASHES.<br>
+    BIG MEMORIES.
+`;
+
+        document.getElementById("milestoneTitle1").innerHTML = "FIRST SPLASHES";
+        document.getElementById("milestoneTitle2").innerHTML = "GROWING CONFIDENCE";
+        document.getElementById("milestoneTitle3").innerHTML = "BIG MILESTONES";
+
+
+        document.getElementById("wavesLabel").innerHTML = "THE WATER IS WAITING";
+
+        document.getElementById("wavesTitle").innerHTML = `
+    READY TO MAKE<br>
+    WAVES?
+`;
+
+        document.getElementById("wavesDescription").innerHTML = `
+    Every stroke builds courage. Every lesson creates confidence.
+    Find your flow, reach new milestones, and make every splash
+    unforgettable.
+`;
+
+        document.getElementById("wavesButton").innerHTML = `
+    EXPLORE AMAZING CLASSES <span>→</span>
+`;
+
+
+        document.getElementById("footerBrand").innerHTML = "PUREWAVE";
+
+        document.getElementById("footerTagline").innerHTML = `
+    Where every splash begins a new story.
+`;
+
+        document.getElementById("footerExploreTitle").innerHTML = "EXPLORE";
+
+        document.getElementById("footerHome").innerHTML = "HOME";
+        document.getElementById("footerStory").innerHTML = "OUR STORY";
+        document.getElementById("footerClasses").innerHTML = "OUR CLASSES";
+        document.getElementById("footerContact").innerHTML = "CONTACT US";
+
+        document.getElementById("footerProgramsTitle").innerHTML = "OUR PROGRAMS";
+
+        document.getElementById("footerProgram1").innerHTML = "LITTLE SPLASHERS";
+        document.getElementById("footerProgram2").innerHTML = "SWIM STARTERS";
+        document.getElementById("footerProgram3").innerHTML = "STROKE MASTERS";
+        document.getElementById("footerProgram4").innerHTML = "CHAMPIONS";
+
+        document.getElementById("footerCopyright").innerHTML = `
+    © 2026 PUREWAVE. ALL RIGHTS RESERVED.
+`;
+
+
+
+
+
+
+      
+const poolImageSection = document.querySelector(".footer-pool-image");
+const poolImage = document.querySelector(".footer-pool-image img");
+
+if (poolImageSection && poolImage) {
+    function updatePoolParallax() {
+        const rect = poolImageSection.getBoundingClientRect();
+
+        const movement =
+            (window.innerHeight / 2 - (rect.top + rect.height / 2)) * -0.18;
+
+        poolImage.style.setProperty(
+            "--pool-parallax",
+            `${movement}px`
+        );
+    }
+
+    window.addEventListener("scroll", updatePoolParallax, {
+        passive: true
+    });
+
+    window.addEventListener("resize", updatePoolParallax);
+
+    updatePoolParallax();
+}
+
+
+
+    </script>
+
+</body>
+
+</html>
